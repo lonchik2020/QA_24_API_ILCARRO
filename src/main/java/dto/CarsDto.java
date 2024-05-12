@@ -1,2 +1,14 @@
-package dto;public class CarsDto {
+package dto;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@Builder
+@ToString
+public class CarsDto {
+    private CarDto [] cars;
 }
