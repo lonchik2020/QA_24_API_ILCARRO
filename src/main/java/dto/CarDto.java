@@ -1,5 +1,6 @@
 package dto;
 
+import dto.enumclasses.Fuel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,6 +18,7 @@ public class CarDto {
     private String model; //": "string",
     private String year; //": "string",
     private String fuel; //": "string",
+    //Fuel fuel;//in other to see the string of the object--to use getter
     private int seats; //": 0,
     private String carClass; //": "string",
     private double pricePerDay;//": 0,
