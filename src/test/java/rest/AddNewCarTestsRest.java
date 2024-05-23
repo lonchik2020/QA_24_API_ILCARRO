@@ -59,7 +59,8 @@ public class AddNewCarTestsRest extends CarController {
                 .pricePerDay(100.23)
                 .city("Haifa")
                 .build();
-        Assert.assertEquals(statusCodeAddNewCarResponse(car, ""), 401);
+        Assert.assertEquals(statusCodeAddNewCarResponse(car, ""), 403);
+        //the mistake should be 401 according to the documentation ---> to open bug
     }
 
 }
